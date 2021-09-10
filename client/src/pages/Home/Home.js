@@ -8,6 +8,7 @@ import Footer from '../../components/Footer/Footer'
 import styles from './Home.module.sass'
 import carouselConstants from '../../carouselConstants'
 import Spinner from '../../components/Spinner/Spinner'
+import Satisfaction from './Satisfaction/Satisfaction'
 
 const Home = props => {
   const [index, setIndex] = useState(0)
@@ -265,6 +266,9 @@ const Home = props => {
               <Link to='/startContest'>
                 <i class='far fa-lightbulb'></i> Start A Contest
               </Link>
+            </div>
+            <div className={styles.containerSatisfaction}>
+              <Satisfaction />
             </div>
           </div>
           <Footer />
